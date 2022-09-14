@@ -2,7 +2,6 @@ import { DataSource } from "typeorm";
 import { SnakeNamingStrategy } from "typeorm-naming-strategies";
 
 const baseDir = process.env.NODE_ENV == "production" ? "dist/src" : "src";
-console.log("process.env.NODE_ENV: ", process.env.NODE_ENV);
 
 export const myDataSource = new DataSource({
   type: "postgres",
